@@ -110,4 +110,5 @@ Expand viva question bank dynamically.
 Enhance emotion recognition with advanced deep learning models.
 
 
-![home](https://github.com/latha-shree/AI-Viva-Mentor/blob/main/home1.png)
+![home1](https://github.com/latha-shree/AI-Viva-Mentor/blob/main/home1.png)
+![home2](https://github.com/latha-shree/AI-Viva-Mentor/blob/main/home2.png)
