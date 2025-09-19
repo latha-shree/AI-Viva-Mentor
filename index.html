@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>INTERVIEW MANAGEMENT</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600&family=Poppins:wght@500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+    <nav class="navbar" id="navbar">
+        <div class="container">
+            <div class="navbar-logo">
+                <i class="fa-solid fa-calendar-check logo-icon"></i>
+                <span>INTERVIEW MANAGEMENT</span>
+            </div>
+            
+            <div class="mobile-menu-toggle" id="menuToggle">
+                <i class="fa-solid fa-bars" id="menuIcon"></i>
+            </div>
+            
+            <ul class="navbar-menu" id="navMenu">
+                <li class="navbar-item active">
+                    <a href="/" class="navbar-link">Home</a>
+                </li>
+                <li class="navbar-item">
+                    <a href="#about" class="navbar-link">About</a>
+                </li>
+                <li class="navbar-item">
+                    <a href="#features" class="navbar-link">Features</a>
+                </li>
+               
+            </ul>
+            
+            <div class="navbar-actions" id="navActions">
+                <a href="/enternew" class="navbar-button register">
+                    <i class="fa-solid fa-user-plus"></i>
+                    <span>Register</span>
+                </a>
+                <a href="/userlogin" class="navbar-button login">
+                    <i class="fa-solid fa-right-to-bracket"></i>
+                    <span>Login</span>
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <section class="hero">
+        <div class="hero-overlay"></div>
+        <div class="container hero-container">
+            <div class="hero-content">
+                <h1 class="hero-title fade-in">Streamline Your Interview Process</h1>
+                <p class="hero-description fade-in">
+                    Efficiently manage your recruitment process with our comprehensive interview management system. 
+                    Schedule, track, and evaluate candidates all in one place.
+                </p>
+                <div class="hero-buttons fade-in">
+                    <a href="/enternew" class="button button-accent">Get Started</a>
+                    <a href="#about" class="button button-outline">Learn More</a>
+                </div>
+            </div>
+            <div class="hero-image-container fade-in">
+                <div class="hero-card">
+                    <div class="hero-card-content">
+                        <h3>Smart Interview Management</h3>
+                        <ul class="hero-features-list">
+                            <li>Streamlined scheduling</li>
+                            <li>Candidate tracking</li>
+                            <li>Collaborative evaluation</li>
+                            <li>Automated notifications</li>
+                        </ul>
+                        <a href="#features" class="learn-more">Explore Features →</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="features" id="features">
+        <div class="container">
+            <div class="section-header fade-in">
+                <h2>Powerful Features</h2>
+                <p>Designed to simplify your interview management workflow</p>
+            </div>
+            <div class="features-grid">
+                <div class="feature-card fade-in">
+                    <div class="feature-icon">
+                        <i class="fa-solid fa-calendar-days"></i>
+                    </div>
+                    <h3>Smart Scheduling</h3>
+                    <p>Easily schedule interviews with automated calendar integration and conflict detection.</p>
+                </div>
+                <div class="feature-card fade-in">
+                    <div class="feature-icon">
+                        <i class="fa-solid fa-users"></i>
+                    </div>
+                    <h3>Candidate Management</h3>
+                    <p>Organize candidate profiles, resumes, and track their progress through your pipeline.</p>
+                </div>
+                <div class="feature-card fade-in">
+                    <div class="feature-icon">
+                        <i class="fa-solid fa-clipboard-check"></i>
+                    </div>
+                    <h3>Evaluation Tools</h3>
+                    <p>Standardized evaluation forms and collaborative feedback collection.</p>
+                </div>
+                <div class="feature-card fade-in">
+                    <div class="feature-icon">
+                        <i class="fa-solid fa-chart-line"></i>
+                    </div>
+                    <h3>Analytics Dashboard</h3>
+                    <p>Gain insights from interview data with powerful reporting and analytics.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="about" id="about">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text fade-in">
+                    <h2>About Our Solution</h2>
+                    <p>Our interview management system is designed to streamline the entire recruitment process, saving your team time and improving candidate experience.</p>
+                    <p>With a focus on usability and efficiency, we've built a platform that adapts to your workflow and helps you make better hiring decisions.</p>
+                    <a href="/enternew" class="button button-primary">Join Now</a>
+                </div>
+                <div class="about-image fade-in">
+                    <img src="https://images.pexels.com/photos/3184339/pexels-photo-3184339.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Team collaboration">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="cta">
+        <div class="container">
+            <div class="cta-content fade-in">
+                <h2>Ready to Transform Your Interview Process?</h2>
+                <p>Join thousands of companies already using our platform to streamline their recruitment.</p>
+                <div class="cta-buttons">
+                    <a href="/enternew" class="button button-highlight">Get Started</a>
+                   
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <div class="footer-logo">
+                        <i class="fa-solid fa-calendar-check logo-icon"></i>
+                        <span>INTERVIEW MANAGEMENT</span>
+                    </div>
+                    <p>Streamlining the interview process for teams of all sizes.</p>
+                    <div class="social-links">
+                        <a href="#" class="social-link"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="#" class="social-link"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="#" class="social-link"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="#" class="social-link"><i class="fa-brands fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-links-column">
+                        <h3>Company</h3>
+                        <ul>
+                            <li><a href="#about">About Us</a></li>
+                            <li><a href="#careers">Careers</a></li>
+                            <li><a href="#blog">Blog</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-links-column">
+                        <h3>Product</h3>
+                        <ul>
+                            <li><a href="#features">Features</a></li>
+                            <li><a href="#pricing">Pricing</a></li>
+                            <li><a href="#testimonials">Testimonials</a></li>
+                            <li><a href="#faq">FAQ</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-links-column">
+                        <h3>Resources</h3>
+                        <ul>
+                            <li><a href="#support">Support</a></li>
+                            <li><a href="#docs">Documentation</a></li>
+                            <li><a href="#privacy">Privacy Policy</a></li>
+                            <li><a href="#terms">Terms of Service</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Interview Management. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="{{ url_for('static', filename='js/main.js') }}"></script>
+</body>
+</html>

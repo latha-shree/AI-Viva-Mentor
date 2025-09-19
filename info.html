@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>INTERVIEW PROCESS</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600&family=Poppins:wght@500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <style>
+        :root {
+            --primary-color: #4361EE;
+            --primary-light: #4895EF;
+            --primary-dark: #3A0CA3;
+            --accent-color: #4CAF50;
+            --accent-dark: #2E7D32;
+            --accent-light: #81C784;
+            --neutral-100: #F8F9FA;
+            --neutral-200: #E9ECEF;
+            --neutral-300: #DEE2E6;
+            --neutral-500: #ADB5BD;
+            --neutral-700: #495057;
+            --neutral-900: #212529;
+            --shadow-sm: 0 2px 4px rgba(0, 0, 0, 0.05);
+            --shadow-md: 0 4px 8px rgba(0, 0, 0, 0.1);
+            --shadow-lg: 0 8px 16px rgba(0, 0, 0, 0.1);
+            --radius-sm: 4px;
+            --radius-md: 8px;
+            --radius-lg: 16px;
+            --spacing-1: 8px;
+            --spacing-2: 16px;
+            --spacing-3: 24px;
+            --spacing-4: 32px;
+            --spacing-5: 48px;
+            --spacing-6: 64px;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Open Sans', sans-serif;
+            color: var(--neutral-900);
+            line-height: 1.5;
+            background-color: var(--neutral-100);
+            min-height: 100vh;
+        }
+
+        .navbar {
+            background-color: white;
+            box-shadow: var(--shadow-sm);
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .navbar .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 70px;
+            padding: 0 var(--spacing-4);
+        }
+
+        .navbar-logo {
+            display: flex;
+            align-items: center;
+            font-family: 'Poppins', sans-serif;
+            font-weight: 600;
+            color: var(--primary-color);
+            text-decoration: none;
+            font-size: 1.25rem;
+        }
+
+        .navbar-menu {
+            display: flex;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        .navbar-item {
+            margin-left: var(--spacing-3);
+        }
+
+        .navbar-link {
+            color: var(--neutral-700);
+            text-decoration: none;
+            font-weight: 500;
+            padding: var(--spacing-2);
+            transition: color 0.2s ease;
+        }
+
+        .navbar-link:hover {
+            color: var(--primary-color);
+        }
+
+        .navbar-link.active {
+            color: var(--accent-color);
+        }
+
+        .main-content {
+            padding-top: 120px;
+            min-height: calc(100vh - 70px);
+            background: linear-gradient(135deg, var(--primary-light) 0%, var(--primary-dark) 100%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .interview-card {
+            background: white;
+            border-radius: var(--radius-lg);
+            box-shadow: var(--shadow-lg);
+            padding: var(--spacing-4);
+            width: 100%;
+            max-width: 500px;
+            margin: var(--spacing-4);
+            text-align: center;
+            animation: slideUp 0.5s ease-out;
+        }
+
+        .card-icon {
+            font-size: 3rem;
+            color: var(--primary-color);
+            margin-bottom: var(--spacing-3);
+        }
+
+        .card-title {
+            font-family: 'Poppins', sans-serif;
+            font-size: 1.75rem;
+            color: var(--neutral-900);
+            margin-bottom: var(--spacing-3);
+        }
+
+        .card-description {
+            color: var(--neutral-700);
+            margin-bottom: var(--spacing-4);
+            font-size: 1.1rem;
+        }
+
+        .start-button {
+            background-color: var(--accent-color);
+            color: white;
+            border: none;
+            padding: var(--spacing-2) var(--spacing-4);
+            border-radius: var(--radius-md);
+            font-size: 1.1rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.2s ease;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: var(--spacing-2);
+        }
+
+        .start-button:hover {
+            background-color: var(--accent-dark);
+            transform: translateY(-2px);
+            box-shadow: var(--shadow-md);
+        }
+
+        .start-button:active {
+            transform: translateY(0);
+        }
+
+        @keyframes slideUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @media (max-width: 768px) {
+            .navbar .container {
+                padding: 0 var(--spacing-2);
+            }
+
+            .interview-card {
+                margin: var(--spacing-2);
+                padding: var(--spacing-3);
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <a href="/" class="navbar-logo">
+                <i class="fa-solid fa-comments-question logo-icon"></i>
+                <span>INTERVIEW SYSTEM</span>
+            </a>
+            <ul class="navbar-menu">
+                <li class="navbar-item">
+                    <a href="/" class="navbar-link">Home</a>
+                </li>
+                <li class="navbar-item">
+                    <a href="/info" class="navbar-link active">Interview</a>
+                </li>
+                <li class="navbar-item">
+                    <a href="/logout" class="navbar-link">Logout</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="main-content">
+        <div class="interview-card">
+            <i class="fa-solid fa-robot card-icon"></i>
+            <h1 class="card-title">Start Your Interview</h1>
+            <p class="card-description">
+                Our AI-powered system is ready to conduct your interview. Click the button below to begin.
+            </p>
+            <form action="/info" method="POST">
+                <button type="submit" class="start-button">
+                    <i class="fa-solid fa-play"></i>
+                    Begin Interview
+                </button>
+            </form>
+        </div>
+    </main>
+
+    <script>
+        // Add smooth scrolling for better UX
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+    <script src="{{ url_for('static', filename='js/main2.js') }}"></script>
+
+</body>
+</html>

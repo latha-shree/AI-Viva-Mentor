@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interview System - Message</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600&family=Poppins:wght@500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <style>
+        :root {
+            --primary-color: #4361EE;
+            --primary-light: #4895EF;
+            --primary-dark: #3A0CA3;
+            --accent-color: #4CAF50;
+            --accent-dark: #2E7D32;
+            --accent-light: #81C784;
+            --neutral-100: #F8F9FA;
+            --neutral-200: #E9ECEF;
+            --neutral-300: #DEE2E6;
+            --neutral-500: #ADB5BD;
+            --neutral-700: #495057;
+            --neutral-900: #212529;
+            --shadow-sm: 0 2px 4px rgba(0, 0, 0, 0.05);
+            --shadow-md: 0 4px 8px rgba(0, 0, 0, 0.1);
+            --shadow-lg: 0 8px 16px rgba(0, 0, 0, 0.1);
+            --radius-sm: 4px;
+            --radius-md: 8px;
+            --radius-lg: 16px;
+            --spacing-1: 8px;
+            --spacing-2: 16px;
+            --spacing-3: 24px;
+            --spacing-4: 32px;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Open Sans', sans-serif;
+            color: var(--neutral-900);
+            line-height: 1.5;
+            background: linear-gradient(135deg, var(--primary-light) 0%, var(--primary-dark) 100%);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .message-card {
+            background: white;
+            border-radius: var(--radius-lg);
+            box-shadow: var(--shadow-lg);
+            padding: var(--spacing-4);
+            width: 90%;
+            max-width: 500px;
+            text-align: center;
+            animation: fadeIn 0.5s ease-out;
+        }
+
+        .message-icon {
+            font-size: 3rem;
+            color: var(--primary-color);
+            margin-bottom: var(--spacing-3);
+        }
+
+        .message-content {
+            font-size: 1.1rem;
+            color: var(--neutral-700);
+            margin-bottom: var(--spacing-3);
+            padding: var(--spacing-3);
+            background-color: var(--neutral-100);
+            border-radius: var(--radius-md);
+        }
+
+        .home-button {
+            display: inline-flex;
+            align-items: center;
+            gap: var(--spacing-2);
+            background-color: var(--accent-color);
+            color: white;
+            text-decoration: none;
+            padding: var(--spacing-2) var(--spacing-3);
+            border-radius: var(--radius-md);
+            font-weight: 600;
+            transition: all 0.2s ease;
+        }
+
+        .home-button:hover {
+            background-color: var(--accent-dark);
+            transform: translateY(-2px);
+            box-shadow: var(--shadow-md);
+        }
+
+        .home-button:active {
+            transform: translateY(0);
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="message-card">
+        <i class="fa-solid fa-circle-check message-icon"></i>
+        <div class="message-content">
+            {{msg}}
+        </div>
+        <a href="/gohome" class="home-button">
+            <i class="fa-solid fa-house"></i>
+            Return to Home
+        </a>
+    </div>
+</body>
+</html>
