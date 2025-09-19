@@ -112,3 +112,12 @@ Enhance emotion recognition with advanced deep learning models.
 
 ![home1](https://github.com/latha-shree/AI-Viva-Mentor/blob/main/home1.png)
 ![home2](https://github.com/latha-shree/AI-Viva-Mentor/blob/main/home2.png)
+![login](https://github.com/latha-shree/AI-Viva-Mentor/blob/main/login.png)
+![interview1]()
+![interview2]()
+![int_result]()
+![viva1]()
+![viva2]()
+![viva_res]()
+![viva_res1]()
+![viva_res2]()
